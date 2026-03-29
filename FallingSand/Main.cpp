@@ -7,7 +7,7 @@
 #include <thread>
 int main()
 {
-    int gameScale = 8;
+    int gameScale = 4;
     const int width = 800;
     const int height = 800;
 
@@ -27,7 +27,6 @@ int main()
     sf::Sprite sprite(texture);
     sprite.setScale(gameScale, gameScale);
 
-    
     while (window.isOpen())
     {
         sf::Event event;
@@ -36,12 +35,13 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-
+        
         if (event.type == sf::Event::MouseButtonPressed) {
             if (event.mouseButton.button == sf::Mouse::Left) {
-				world.write(event.mouseButton.x/gameScale, event.mouseButton.y/gameScale, SandType::Empty);
+                //world.write(event.mouseButton.x / gameScale, event.mouseButton.y / gameScale, SandType::Empty);
             }
         }
+        
 
         auto update_start = std::chrono::high_resolution_clock::now();
         world.update();

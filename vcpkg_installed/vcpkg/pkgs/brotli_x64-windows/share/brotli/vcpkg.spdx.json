@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/brotli-x64-windows-1.1.0#1-1cf9794e-fe1e-4618-aa61-4a86e424ee1b",
-  "name": "brotli:x64-windows@1.1.0#1 6464744b073ec726dca4c1dd38392a1adb827cfa0d5f82c384a13ab60c7e625f",
+  "documentNamespace": "https://spdx.org/spdxdocs/brotli-x64-windows-1.1.0#1-342021f1-1361-4bd1-9e69-afbeaa79567c",
+  "name": "brotli:x64-windows@1.1.0#1 9b66c1c1483081c100a8f7897d4e3ddc66dd43dc5cca6efb7b0d396f5e34b893",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-2024-12-09-1005b78fa1bf1dde1a20c2734cba4ea61ca94d9a"
     ],
-    "created": "2026-03-28T21:36:08Z"
+    "created": "2026-03-29T19:14:56Z"
   },
   "relationships": [
     {
@@ -109,7 +109,7 @@
     {
       "name": "brotli:x64-windows",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "6464744b073ec726dca4c1dd38392a1adb827cfa0d5f82c384a13ab60c7e625f",
+      "versionInfo": "9b66c1c1483081c100a8f7897d4e3ddc66dd43dc5cca6efb7b0d396f5e34b893",
       "downloadLocation": "NONE",
       "licenseConcluded": "MIT",
       "licenseDeclared": "NOASSERTION",
@@ -133,7 +133,7 @@
   ],
   "files": [
     {
-      "fileName": "./C:/Users/akosd/AppData/Local/vcpkg/registries/git-trees/4e5b5ae1ad26c80535c893cc0307121f0398549e/emscripten.patch",
+      "fileName": "./C:/Users/Admin/AppData/Local/vcpkg/registries/git-trees/4e5b5ae1ad26c80535c893cc0307121f0398549e/emscripten.patch",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -145,7 +145,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/akosd/AppData/Local/vcpkg/registries/git-trees/4e5b5ae1ad26c80535c893cc0307121f0398549e/fix-arm-uwp.patch",
+      "fileName": "./C:/Users/Admin/AppData/Local/vcpkg/registries/git-trees/4e5b5ae1ad26c80535c893cc0307121f0398549e/fix-arm-uwp.patch",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
@@ -157,7 +157,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/akosd/AppData/Local/vcpkg/registries/git-trees/4e5b5ae1ad26c80535c893cc0307121f0398549e/install.patch",
+      "fileName": "./C:/Users/Admin/AppData/Local/vcpkg/registries/git-trees/4e5b5ae1ad26c80535c893cc0307121f0398549e/install.patch",
       "SPDXID": "SPDXRef-file-2",
       "checksums": [
         {
@@ -169,7 +169,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/akosd/AppData/Local/vcpkg/registries/git-trees/4e5b5ae1ad26c80535c893cc0307121f0398549e/pkgconfig.patch",
+      "fileName": "./C:/Users/Admin/AppData/Local/vcpkg/registries/git-trees/4e5b5ae1ad26c80535c893cc0307121f0398549e/pkgconfig.patch",
       "SPDXID": "SPDXRef-file-3",
       "checksums": [
         {
@@ -181,7 +181,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/akosd/AppData/Local/vcpkg/registries/git-trees/4e5b5ae1ad26c80535c893cc0307121f0398549e/portfile.cmake",
+      "fileName": "./C:/Users/Admin/AppData/Local/vcpkg/registries/git-trees/4e5b5ae1ad26c80535c893cc0307121f0398549e/portfile.cmake",
       "SPDXID": "SPDXRef-file-4",
       "checksums": [
         {
@@ -193,7 +193,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/akosd/AppData/Local/vcpkg/registries/git-trees/4e5b5ae1ad26c80535c893cc0307121f0398549e/usage",
+      "fileName": "./C:/Users/Admin/AppData/Local/vcpkg/registries/git-trees/4e5b5ae1ad26c80535c893cc0307121f0398549e/usage",
       "SPDXID": "SPDXRef-file-5",
       "checksums": [
         {
@@ -205,7 +205,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/akosd/AppData/Local/vcpkg/registries/git-trees/4e5b5ae1ad26c80535c893cc0307121f0398549e/vcpkg.json",
+      "fileName": "./C:/Users/Admin/AppData/Local/vcpkg/registries/git-trees/4e5b5ae1ad26c80535c893cc0307121f0398549e/vcpkg.json",
       "SPDXID": "SPDXRef-file-6",
       "checksums": [
         {

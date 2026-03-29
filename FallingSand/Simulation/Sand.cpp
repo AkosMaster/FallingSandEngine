@@ -11,25 +11,40 @@ SandWorld::SandWorld(int width, int height) : width(width), height(height) {
 	for (int x = 0; x < width; x++) {
 		for (int y = 0; y < height; y++) {
 			double n = noise.noise(x * 0.1, y * 0.1);
+			SandCell c;
 			if (n > 0.75) {
-				write(x, y, SandCell(Wood, INT_MAX));
+				c = SandCell(Wood, INT_MAX, true);
 			}
 			else if (n > 0.5) {
-				write(x, y, SandCell(Sand, 3));
+				c = SandCell(Sand, 3, true);
 			}
 			else if (n > 0.25) {
-				write(x, y, SandCell(Water, 2));
+				c = SandCell(Water, 2, false);
 			}
 			else {
-				write(x, y, SandCell(Empty, 0));
+				c = SandCell(Empty, 0, false);
 			}
+
+			write(x, y, c);
+			
 		}
 	}
+	//tree.refresh(0, 0, 0);
 }
 
-inline void SandWorld::write(int x, int y, SandCell type) {
+inline void SandWorld::write(int x, int y, SandCell cell) {
 	if (x >= 0 && x < width && y >= 0 && y < height) {
-		buffer[y * width + x] = type;
+
+		SandCell prev = buffer[y * width + x];
+		if (!prev.collides && cell.collides) {
+			tree.modify(x, y, 1);
+		}
+		else if (prev.collides && !cell.collides) {
+			tree.modify(x, y, -1);
+		}
+
+		buffer[y * width + x] = cell;
+		
 	}
 }
 
@@ -37,7 +52,7 @@ inline SandCell SandWorld::read(int x, int y) {
 	if (x >= 0 && x < width && y >= 0 && y < height) {
 		return buffer[y * width + x];
 	}
-	return SandCell(Wall, INT_MAX);
+	return SandCell(Wall, INT_MAX, false);
 }
 
 inline void SandWorld::swap(int x, int y, int x2, int y2) {
@@ -56,28 +71,42 @@ void SandWorld::render(sf::Image& image) {
 
 
 			SandCell cell = read(x, y);
+
+			int quaddepth = tree.getdepth(x, y);
+			if (quaddepth > 0) {
+				image.setPixel(x, y, sf::Color(255*quaddepth/8, 0, 0));
+				continue;
+			}
+
+			sf::Color color;
 			switch (cell.type) {
 			case Empty:
-				image.setPixel(x, y, sf::Color::Black);
+				color = sf::Color::Black;
 				break;
 			case Sand:
-				image.setPixel(x, y, sf::Color(194, 178, 128));
+				color = sf::Color(194, 178, 128);
 				break;
 			case Water:
-				image.setPixel(x, y, sf::Color(0, 0, 255));
+				color = sf::Color(0,0, 255);
 				break;
 			case Wall:
-				image.setPixel(x, y, sf::Color(255,0,0));
+				color = sf::Color(255,0,0);
 				break;
 			case Wood:
-				image.setPixel(x, y, sf::Color(164, 116, 73));
+				color = sf::Color(164, 116, 73);
+				break;
 			}
+			//image.setPixel(x, y, color);
+			image.setPixel(x, y, color);
+
+			
 		}
 	}
 }
 
 
 void SandWorld::update() {
+	//return;
 	std::cout << "Updating world..." << rand() << std::endl;
 	for (int y = height - 1; y >= 0; y--) {
 		bool go_right = rand() % 2 == 0;
@@ -88,6 +117,8 @@ void SandWorld::update() {
 		}
 	}
 	updateTick++;
+	tree.updateTick++;
+	tree.refresh(0, 0, 0);
 }
 
 void SandWorld::updateCell(int x, int y) {

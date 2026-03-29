@@ -3,7 +3,7 @@ Version: 2.13.3
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: a29ab35d733da5fc1933c13b18e79d78f58eb759a11fb1ff410eb9c28402caf0
+Abi: 13de97ab9ad09ac57ccbd392face651f62eddf57066c3e10e1727bc55c54cc67
 Description: A library to render fonts.
 Default-Features: brotli, bzip2, png, zlib
 

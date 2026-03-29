@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/libvorbis-x64-windows-1.3.7#3-083ccfaf-67e6-4a7f-9a71-b87b0acd7df0",
-  "name": "libvorbis:x64-windows@1.3.7#3 0c624ab0aa6738a43c820609b2e8426052fe20b1f125834776237f44ea72f815",
+  "documentNamespace": "https://spdx.org/spdxdocs/libvorbis-x64-windows-1.3.7#3-efcb7ba7-008e-40ec-b7fe-19985baa8deb",
+  "name": "libvorbis:x64-windows@1.3.7#3 493cca07e4ef6ae220c2f475bd8860edc2e0444d739a2c6b339490d70831a1f9",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-2024-12-09-1005b78fa1bf1dde1a20c2734cba4ea61ca94d9a"
     ],
-    "created": "2026-03-28T21:39:12Z"
+    "created": "2026-03-29T19:16:02Z"
   },
   "relationships": [
     {
@@ -109,7 +109,7 @@
     {
       "name": "libvorbis:x64-windows",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "0c624ab0aa6738a43c820609b2e8426052fe20b1f125834776237f44ea72f815",
+      "versionInfo": "493cca07e4ef6ae220c2f475bd8860edc2e0444d739a2c6b339490d70831a1f9",
       "downloadLocation": "NONE",
       "licenseConcluded": "BSD-3-Clause",
       "licenseDeclared": "NOASSERTION",
@@ -133,7 +133,7 @@
   ],
   "files": [
     {
-      "fileName": "./C:/Users/akosd/AppData/Local/vcpkg/registries/git-trees/23d11198ff2df7a3af54f1c4645ef71a141f2a85/0001-Dont-export-vorbisenc-functions.patch",
+      "fileName": "./C:/Users/Admin/AppData/Local/vcpkg/registries/git-trees/23d11198ff2df7a3af54f1c4645ef71a141f2a85/0001-Dont-export-vorbisenc-functions.patch",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -145,7 +145,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/akosd/AppData/Local/vcpkg/registries/git-trees/23d11198ff2df7a3af54f1c4645ef71a141f2a85/0002-Fixup-pkgconfig-libs.patch",
+      "fileName": "./C:/Users/Admin/AppData/Local/vcpkg/registries/git-trees/23d11198ff2df7a3af54f1c4645ef71a141f2a85/0002-Fixup-pkgconfig-libs.patch",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
@@ -157,7 +157,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/akosd/AppData/Local/vcpkg/registries/git-trees/23d11198ff2df7a3af54f1c4645ef71a141f2a85/0003-def-mingw-compat.patch",
+      "fileName": "./C:/Users/Admin/AppData/Local/vcpkg/registries/git-trees/23d11198ff2df7a3af54f1c4645ef71a141f2a85/0003-def-mingw-compat.patch",
       "SPDXID": "SPDXRef-file-2",
       "checksums": [
         {
@@ -169,7 +169,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/akosd/AppData/Local/vcpkg/registries/git-trees/23d11198ff2df7a3af54f1c4645ef71a141f2a85/0004-ogg-find-dependency.patch",
+      "fileName": "./C:/Users/Admin/AppData/Local/vcpkg/registries/git-trees/23d11198ff2df7a3af54f1c4645ef71a141f2a85/0004-ogg-find-dependency.patch",
       "SPDXID": "SPDXRef-file-3",
       "checksums": [
         {
@@ -181,7 +181,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/akosd/AppData/Local/vcpkg/registries/git-trees/23d11198ff2df7a3af54f1c4645ef71a141f2a85/portfile.cmake",
+      "fileName": "./C:/Users/Admin/AppData/Local/vcpkg/registries/git-trees/23d11198ff2df7a3af54f1c4645ef71a141f2a85/portfile.cmake",
       "SPDXID": "SPDXRef-file-4",
       "checksums": [
         {
@@ -193,7 +193,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/akosd/AppData/Local/vcpkg/registries/git-trees/23d11198ff2df7a3af54f1c4645ef71a141f2a85/usage",
+      "fileName": "./C:/Users/Admin/AppData/Local/vcpkg/registries/git-trees/23d11198ff2df7a3af54f1c4645ef71a141f2a85/usage",
       "SPDXID": "SPDXRef-file-5",
       "checksums": [
         {
@@ -205,7 +205,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/akosd/AppData/Local/vcpkg/registries/git-trees/23d11198ff2df7a3af54f1c4645ef71a141f2a85/vcpkg.json",
+      "fileName": "./C:/Users/Admin/AppData/Local/vcpkg/registries/git-trees/23d11198ff2df7a3af54f1c4645ef71a141f2a85/vcpkg.json",
       "SPDXID": "SPDXRef-file-6",
       "checksums": [
         {

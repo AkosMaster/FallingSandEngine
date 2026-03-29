@@ -1,5 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "QuadTree.h"
 enum SandType {
 	Empty = 0,
 	Sand = 1,
@@ -9,12 +10,14 @@ enum SandType {
 };
 
 struct SandCell {
+	SandCell() : type(Empty), density(0), collides(false) {}
 
-	SandCell(SandType type=Empty, int density=0) : type(type), density(density) {}
+	SandCell(SandType type, int density, bool collides) : type(type), density(density), collides(collides) {}
 
 	SandType type;
 	int density;
 	int lastUpdateTick = -1;
+	bool collides;
 };
 
 class SandWorld {
@@ -23,6 +26,7 @@ class SandWorld {
 	int updateTick = 0;
 
 	SandCell* buffer;
+	QuadTree tree = QuadTree(200,2,9);
 	
 public:
 	SandWorld(int width, int height);

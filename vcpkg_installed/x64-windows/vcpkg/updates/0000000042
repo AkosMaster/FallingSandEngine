@@ -3,7 +3,7 @@ Version: 2.6.2
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: f35f0cc298a93e1f44f8b9060fb96e4872230614ddac9fe69c254bf335fa3322
+Abi: 6f1d482f2a9703c9fa6239a87ca000cee6ccf409d3b151035b33223c64b1f552
 Description: Simple and fast multimedia library
 Default-Features: audio, graphics, network, window
 Status: install ok half-installed
