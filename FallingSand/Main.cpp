@@ -2,6 +2,7 @@
 #include <vector>
 
 #include "Simulation/Sand.h"
+#include "Simulation/BoxObject.h"
 
 #include <chrono>
 #include <thread>
@@ -27,6 +28,7 @@ int main()
     sf::Sprite sprite(texture);
     sprite.setScale(gameScale, gameScale);
 
+    BoxObject box1 = BoxObject(&world,vec2(40,50), 3, 5, 1);
     
     while (window.isOpen())
     {
@@ -39,12 +41,14 @@ int main()
 
         if (event.type == sf::Event::MouseButtonPressed) {
             if (event.mouseButton.button == sf::Mouse::Left) {
-				world.write(event.mouseButton.x/gameScale, event.mouseButton.y/gameScale, SandType::Empty);
+				//world.write(event.mouseButton.x/gameScale, event.mouseButton.y/gameScale, SandType::Empty);
+                box1.pos = vec2(40, 0);
             }
         }
 
         auto update_start = std::chrono::high_resolution_clock::now();
         world.update();
+        box1.update();
         auto update_end = std::chrono::high_resolution_clock::now();
 
 		auto update_duration = std::chrono::duration_cast<std::chrono::milliseconds>(update_end - update_start).count();
@@ -54,6 +58,7 @@ int main()
         }
         
         world.render(image);
+        box1.render(image);
         texture.update(image);
         
 

@@ -14,10 +14,10 @@ SandWorld::SandWorld(int width, int height) : width(width), height(height) {
 			if (n > 0.75) {
 				write(x, y, SandCell(Wood, INT_MAX));
 			}
-			else if (n > 0.5) {
+			else if (n > 0.25) {
 				write(x, y, SandCell(Sand, 3));
 			}
-			else if (n > 0.25) {
+			else if (n > 100) {
 				write(x, y, SandCell(Water, 2));
 			}
 			else {
@@ -78,7 +78,7 @@ void SandWorld::render(sf::Image& image) {
 
 
 void SandWorld::update() {
-	std::cout << "Updating world..." << rand() << std::endl;
+	
 	for (int y = height - 1; y >= 0; y--) {
 		bool go_right = rand() % 2 == 0;
 
