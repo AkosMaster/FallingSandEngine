@@ -1,0 +1,17 @@
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/CMakeFiles/alsoft.common.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/CMakeFiles/clang-tidy-check.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/CMakeFiles/OpenAL.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/CMakeFiles/alsoft.excommon.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/CMakeFiles/test.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/CMakeFiles/edit_cache.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/CMakeFiles/rebuild_cache.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/CMakeFiles/list_install_components.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/CMakeFiles/install.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/CMakeFiles/install/local.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/fmt-11.0.2/CMakeFiles/alsoft.fmt.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/fmt-11.0.2/CMakeFiles/test.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/fmt-11.0.2/CMakeFiles/edit_cache.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/fmt-11.0.2/CMakeFiles/rebuild_cache.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/fmt-11.0.2/CMakeFiles/list_install_components.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/fmt-11.0.2/CMakeFiles/install.dir
+C:/Users/akosd/OneDrive/Desktop/fallingsand/FallingSand/vcpkg_installed/vcpkg/blds/openal-soft/x64-windows-rel/fmt-11.0.2/CMakeFiles/install/local.dir
