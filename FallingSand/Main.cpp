@@ -28,7 +28,7 @@ int main()
     sf::Sprite sprite(texture);
     sprite.setScale(gameScale, gameScale);
 
-    BoxObject box1 = BoxObject(&world,vec2(40,50), 3, 5, 1);
+    BoxObject box1 = BoxObject(&world,vec2(40,50), 3, 4, 30);
     
     while (window.isOpen())
     {
@@ -43,6 +43,10 @@ int main()
             if (event.mouseButton.button == sf::Mouse::Left) {
 				//world.write(event.mouseButton.x/gameScale, event.mouseButton.y/gameScale, SandType::Empty);
                 box1.pos = vec2(40, 0);
+                box1.vel = vec2(0, 0);
+            }
+            if (event.mouseButton.button == sf::Mouse::Right) {
+                box1.vel.y -= 1;
             }
         }
 

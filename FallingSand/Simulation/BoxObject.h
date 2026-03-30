@@ -9,18 +9,16 @@ class BoxObject {
 	int height;
 	
 	SandWorld* world;
-	
 	float mass;
-	float drag;
 public:
 	vec2 pos;
-	vec2 accel;
+	vec2 vel;
 
-	BoxObject(SandWorld* world, vec2 pos, int width, int height, float mass, float drag=0.85) : world(world), width(width), height(height), pos(pos), mass(mass), drag(drag) {}
+	BoxObject(SandWorld* world, vec2 pos, int width, int height, float mass) : world(world), width(width), height(height), pos(pos), mass(mass) {}
 
 	void render(sf::Image& image);
 
 	vec2 getCenter();
-	vec2 getForces();
+	bool checkCollision(vec2 newpos);
 	void update();
 };
